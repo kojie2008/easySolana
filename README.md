@@ -47,33 +47,29 @@ complete -c proxychains4
 
 
 # solana 开发环境部署 
-https://solanacookbook.com/#contributing  
 
-安装NPM包管理工具,n
+https://solanacookbook.com/#contributing   主要参考官方的这个文档进行操作
 
-
-因NODEjs自带NPM包管理工具,后续也会依赖node开发dapp前端应用，所以直接安装nodejs
-https://nodejs.org/zh-cn/  我安装最新尝鲜版，下载至/opt 目录下并解压 
-配置环境变量
-NODEJS_HOME=/opt/node-v18.2.0-linux-x64
-PATH=$PATH:$NODEJS_HOME/bin
-source /etc/profile 
+1  安装NPM包管理工具及依赖包 
+直接使用 sudo apt install npm
+验证查看版本 npm --version 
 
 使用npm管理依赖包
-npm install --save @solana/web3.js 
-npm install --save @solana/spl-token
-npm install --save @solana/wallet-adapter-wallets \
+sudo npm install --save @solana/web3.js 
+sudo npm install --save @solana/spl-token
+sudo npm install --save @solana/wallet-adapter-wallets \
     @solana/wallet-adapter-base
     
-# install Rust
-
+2  安装Rust环境
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
 配置环境变量 
-CARGO_HOME=/home/web3/.cargo
+CARGO_HOME=~/.cargo
 PATH=$PATH:$CARGO_HOME/bin
 source /etc/profile
+验证查看版本 cargo --version
 
-# 安装solana cli
+3.安装solana cli
 
 直接下载编译完版本https://github.com/solana-labs/solana/releases/tag/v1.10.17 
 下载 solana-release-x86_64-unknown-linux-gnu.tar.bz2  至/opt 目录下并解压 
@@ -81,6 +77,8 @@ source /etc/profile
 SOLANA_HOME=/opt/solana-release
 PATH=$PATH:$SOLANA_HOME/bin
 source /etc/profile
+验证查看版本 solana --version  
 
+# solana 开发
 
 
