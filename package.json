@@ -1,0 +1,19 @@
+{
+  "name": "easysolana",
+  "version": "1.0.0",
+  "description": "本文记录作者学习Solana合约编程的过程,将环境部署，工具选择，程序开发等过程的操作步骤及思考记录下来。\r 后续会结合本文，输出一些小工具，方便各位初学者快速搭建环境，直接进入开发阶段",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kojie2008/easySolana.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kojie2008/easySolana/issues"
+  },
+  "homepage": "https://github.com/kojie2008/easySolana#readme"
+}
